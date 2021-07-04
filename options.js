@@ -69,9 +69,13 @@ async function init () {
 }
 
 async function clear () {
-    await chrome.storage.local.clear();
-    init();
-    alert('テンプレートを削除しました');
+    if (confirm('テンプレートを削除しますがよろしいでしょうか？')) {
+        await chrome.storage.local.clear();
+        init();
+        alert('テンプレートを削除しました');
+    } else {
+        alert('テンプレートの削除をキャンセルしました');
+    }
 }
 
 clearButton.addEventListener('click', clear);
