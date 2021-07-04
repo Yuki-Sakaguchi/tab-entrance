@@ -1,0 +1,82 @@
+.grey {
+    background-color: #606368;
+    color: white;
+}
+
+.blue {
+    background-color: #1973e8;
+    color: white;
+}
+
+.red {
+    background-color: #d93125;
+    color: white;
+}
+
+.yellow {
+    background-color: #e37401;
+    color: black;
+}
+
+.green {
+    background-color: #1e8f3e;
+    color: white;
+}
+
+.pink {
+    background-color: #d01784;
+    color: white;
+}
+
+.purple {
+    background-color: #9334e6;
+    color: white;
+}
+
+.cyan {
+    background-color: #027b83;
+    color: white;
+}
+
+.template {
+    padding: 10px 20px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 0 0 #efefef; 
+}
+
+.group-list {
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+.group-list + .group-list {
+    margin-top: 8px;
+}
+
+.group-list::before {
+    content: attr(data-title);
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+li + li {
+    margin-top: 8px;
+}
+
+.icon {
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+    line-height: 1.8em;
+    color: inherit; 
+}

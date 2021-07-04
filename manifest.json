@@ -1,0 +1,14 @@
+{
+    "name": "tab-entrance",
+    "description": "タブのテンプレートを管理する拡張機能。作業にごとにテンプレートを用意しておいてここから作業開始を加速しましょう！",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting", "tabs", "tabGroups"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+}
